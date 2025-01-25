@@ -21,4 +21,26 @@ export default defineNuxtConfig({
     preconnect: true, // Preconnect to Google's font servers
     display: "swap", // Ensure text remains visible during font loading
   },
+
+   app: {
+    head: {
+      title: 'Nuxt App',
+      meta: [
+        {
+          name: 'description',
+          content: 'Nuxt app',
+        },
+      ],
+
+      htmlAttrs: {
+        lang: 'en',
+      },
+    },
+  },
+
+  icon: {
+    serverBundle: {
+      collections: ['uil', 'mdi'], // <!--- this
+    },
+  },
 });
