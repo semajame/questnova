@@ -9,7 +9,7 @@
                 <NuxtImg
                   src="/img/logo.png"
                   alt="Questnova Systems Corporation Logo"
-                  densities="x1 x2"
+                  densities="x1"
                   format="webp"
                   class="w-full h-auto"
                   width="200"
@@ -20,9 +20,9 @@
             <!-- Desktop Navigation -->
             <div class="hidden md:flex space-x-8">
               <NuxtLink
-                v-for="link in ['Services', 'Solutions', 'Contact']"
+                v-for="link in ['Services', 'Projects', 'Contact']"
                 :key="link"
-                :to="`#${link.toLowerCase()}`"
+                :to="`/${link.toLowerCase()}`"
                 class="text-gray-600 hover:text-[#337092] relative group"
               >
                 {{ link }}

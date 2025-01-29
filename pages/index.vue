@@ -8,7 +8,6 @@
     ></div>
 
     <!-- Navigation -->
-    <Header />
 
     <!-- Hero Section -->
     <div class="relative pt-[5.5rem] min-h-screen">
@@ -137,7 +136,9 @@
         <div class="mt-10">
           <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <div v-for="(service, index) in services" :key="index" class="pt-6">
-              <div class="flow-root bg-white rounded-lg px-6 pb-8 pt-4">
+              <div
+                class="flow-root bg-white rounded-lg px-6 pb-8 pt-4 hover:bg-white/80 transition-all duration-300 shadow-sm hover:shadow-md"
+              >
                 <div>
                   <span v-html="service.icon"> </span>
                   <h3
@@ -212,8 +213,6 @@
         </div>
       </div>
     </div>
-
-    <Card />
   </div>
 </template>
 
@@ -223,15 +222,12 @@ const services = [
     title: 'Custom Software Development',
     description:
       'Tailored software solutions to meet your specific business needs, built with Java and modern technologies.',
-    icon: `
-	<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
-		<g fill="none" stroke="#f8c42d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="#f8c42d">
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+		<g fill="none" stroke="#f8cx42d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="#f8c42d">
 			<path d="M15.175 22v-1.009A1.007 1.007 0 0 1 16.18 20h.075c1.432-.012 2.662-1.006 2.954-2.388l.01-.052l.52-2.56l.94-.464c.505-.248.756-.373.81-.6c.055-.228-.114-.45-.451-.895l-1.908-2.508c-.19-.25-.285-.374-.335-.506s-.067-.32-.098-.693C18.353 5.227 14.865 2 10.612 2C6.132 2 2.5 5.582 2.5 10c0 2.75 1.407 5.175 3.55 6.615m0 0V22m0-5.385a8 8 0 0 0 2.027.987" />
 			<path d="m14 9l.92.793c.387.333.58.5.58.707s-.193.374-.58.707L14 12M7 9l-.92.793c-.387.333-.58.5-.58.707s.193.374.58.707L7 12m4.5-4l-2 5" />
 		</g>
-	</svg>
-
-`,
+	</svg>`,
   },
   {
     title: 'Web Development',
