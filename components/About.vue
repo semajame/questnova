@@ -47,7 +47,7 @@
       <!-- Values Section -->
     </div>
 
-    <div class="container mx-auto py-12">
+    <div class="container mx-auto py-12 px-4">
       <!-- Hero Section -->
       <div class="mb-16 text-center">
         <h1 class="text-4xl font-bold mb-2">
@@ -75,7 +75,7 @@
           <div
             v-for="value in values"
             :key="value.id"
-            class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
           >
             <div class="flex items-start space-x-4 gap-3">
               <div>
