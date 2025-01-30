@@ -7,7 +7,7 @@
     ></div>
 
     <!-- Hero Section -->
-    <div class="relative pt-[5.5rem] min-h-screen">
+    <div class="relative pt-[5.5rem] min-h-screen pb-[5rem]">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="pt-20 pb-16 text-center">
           <h1 class="tracking-tight font-extrabold">
@@ -47,27 +47,11 @@
                 class="group w-full flex items-center justify-center px-8 py-3 border-2 border-[#245068] text-md font-medium rounded-md text-black bg-white hover:bg-[#245068] hover:text-white transition-all duration-[500ms] ease-in-out md:py-4 md:px-6"
               >
                 What we are
-                <!-- <Icon
-                  name="iconamoon:arrow-right-2"
-                  width="28"
-                  height="28"
-                  class="ml-1 transform transition-transform duration-[500ms] ease-in-out group-hover:translate-x-1"
-                /> -->
               </NuxtLink>
             </div>
           </div>
         </div>
       </div>
-      <!-- <div>
-        <div class="rounded-md">
-          <NuxtImg
-            src="/img/hero-img.jpg"
-            densities="x1"
-            format="webp"
-            class="rounded-md"
-          />
-        </div>
-      </div> -->
     </div>
 
     <About id="about" />

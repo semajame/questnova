@@ -10,15 +10,6 @@
       >
         <h2 class="text-xl font-semibold mb-4">{{ project.name }}</h2>
         <p class="text-gray-600 mb-4">{{ project.description }}</p>
-
-        <!-- <div class="flex justify-between items-center">
-          <span class="text-sm text-questnova-blue">
-            {{ project.client }}
-          </span>
-          <span class="text-sm text-gray-500">
-            {{ project.year }}
-          </span>
-        </div> -->
       </div>
     </div>
   </section>

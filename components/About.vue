@@ -46,7 +46,8 @@
       </div>
       <!-- Values Section -->
     </div>
-    <div class="container mx-auto px-4 py-12">
+
+    <div class="container mx-auto py-12">
       <!-- Hero Section -->
       <div class="mb-16 text-center">
         <h1 class="text-4xl font-bold mb-2">
@@ -61,8 +62,8 @@
       </div>
 
       <!-- Values Grid -->
-      <div class="flex gap-8 items-center">
-        <div class="w-1/2 rounded-xl">
+      <div class="flex gap-8 items-center flex-col md:flex-row">
+        <div class="md:w-1/2 rounded-xl">
           <NuxtImg
             src="/img/consultation.png"
             format="webp"
@@ -70,7 +71,7 @@
             class="w-full h-auto rounded-xl"
           />
         </div>
-        <div class="flex flex-col gap-4 w-1/2">
+        <div class="flex flex-col gap-4 md:w-1/2">
           <div
             v-for="value in values"
             :key="value.id"
