@@ -83,7 +83,7 @@
                 <span v-html="value.icon" />
               </div>
               <div>
-                <h3 class="text-xl font-bold mb-2">{{ value.title }}</h3>
+                <h2 class="text-xl font-bold mb-2">{{ value.title }}</h2>
                 <p class="text-gray-600">{{ value.description }}</p>
               </div>
             </div>
@@ -99,9 +99,9 @@
         ></div>
 
         <!-- Content -->
-        <h2 class="text-2xl font-bold mb-4 text-white">
+        <h3 class="text-2xl font-bold mb-4 text-white">
           Building Tomorrow's Solutions Today
-        </h2>
+        </h3>
         <p class="text-gray-400 max-w-2xl mx-auto">
           These values have guided us since 2002, helping us deliver premium
           software solutions while maintaining the highest standards of quality
