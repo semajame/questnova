@@ -21,30 +21,39 @@
           <div class="bg-white/40 backdrop-blur-sm rounded-lg shadow-xl p-6">
             <form class="space-y-4">
               <div>
-                <label class="block text-sm font-medium text-gray-700"
+                <label
+                  class="block text-sm font-medium text-gray-700"
+                  for="name"
                   >Name</label
                 >
                 <input
                   type="text"
                   class="mt-1 block py-2 px-3 w-full rounded-md border-gray-300 shadow-md bg-white/80"
+                  id="name"
                 />
               </div>
               <div>
-                <label class="block text-sm font-medium text-gray-700"
+                <label
+                  class="block text-sm font-medium text-gray-700"
+                  for="email"
                   >Email</label
                 >
                 <input
                   type="email"
                   class="mt-1 block w-full py-2 px-3 rounded-md border-gray-300 shadow-md bg-white/80"
+                  id="email"
                 />
               </div>
               <div>
-                <label class="block text-sm font-medium text-gray-700"
+                <label
+                  class="block text-sm font-medium text-gray-700"
+                  for="message"
                   >Message</label
                 >
                 <textarea
                   rows="4"
                   class="mt-1 block w-full py-2 px-3 rounded-md border-gray-300 shadow-md bg-white/80"
+                  id="message"
                 ></textarea>
               </div>
               <button

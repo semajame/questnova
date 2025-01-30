@@ -37,7 +37,7 @@
             </svg>
           </div>
           <div>
-            <h3 class="text-xl font-bold mb-2">Custom Software Development</h3>
+            <h2 class="text-xl font-bold mb-2">Custom Software Development</h2>
             <p class="text-gray-600">
               We tailor software solutions to your specific needs, applying
               standardized project management and quality assurance techniques

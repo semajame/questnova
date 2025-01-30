@@ -33,7 +33,11 @@
 
             <!-- Mobile Navigation Toggle Button -->
             <div class="md:hidden flex items-center">
-              <button @click="toggleMenu" class="text-black focus:outline-none">
+              <button
+                @click="toggleMenu"
+                class="text-black focus:outline-none"
+                aria-label="Menu"
+              >
                 <svg
                   v-if="!menuOpen"
                   xmlns="http://www.w3.org/2000/svg"
