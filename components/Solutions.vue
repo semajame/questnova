@@ -110,7 +110,7 @@
             src="/img/developers.jpg"
             alt="Software development team"
             densities="x1"
-            fromat="webp"
+            format="webp"
             class="w-full object-cover"
           />
 
@@ -152,7 +152,8 @@
               src="/img/ibm-logo.webp"
               class="w-full h-auto"
               densities="x1"
-              format="x1"
+              alt="Ibm Logo"
+              format="webp"
             />
           </div>
           <div>
@@ -167,8 +168,9 @@
             <NuxtImg
               src="/img/sun.png"
               class="w-full h-auto"
+              alt="Sun Logo"
               densities="x1"
-              format="x1"
+              format="webp"
             />
           </div>
           <div>

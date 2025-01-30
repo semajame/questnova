@@ -68,6 +68,7 @@
             src="/img/consultation.png"
             format="webp"
             densities="x1"
+            alt="Values Image"
             class="w-full h-auto rounded-xl"
           />
         </div>
