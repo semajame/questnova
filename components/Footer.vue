@@ -33,7 +33,11 @@
           :visible="{ opacity: 1, y: 0 }"
         >
           <div class="bg-white/40 backdrop-blur-sm rounded-lg shadow-xl p-6">
-            <form class="space-y-4">
+            <form
+              class="space-y-4"
+              action="https://formsubmit.co/ceo@questnova.com"
+              method="POST"
+            >
               <div>
                 <label
                   class="block text-sm font-medium text-gray-700"
@@ -42,6 +46,7 @@
                 >
                 <input
                   type="text"
+                  placeholder="Name"
                   class="mt-1 block py-2 px-3 w-full rounded-md border-gray-300 shadow-md bg-white/80"
                   id="name"
                 />
@@ -54,6 +59,7 @@
                 >
                 <input
                   type="email"
+                  placeholder="Email"
                   class="mt-1 block w-full py-2 px-3 rounded-md border-gray-300 shadow-md bg-white/80"
                   id="email"
                 />
@@ -68,6 +74,7 @@
                   rows="4"
                   class="mt-1 block w-full py-2 px-3 rounded-md border-gray-300 shadow-md bg-white/80"
                   id="message"
+                  placeholder="Message"
                 ></textarea>
               </div>
               <button
