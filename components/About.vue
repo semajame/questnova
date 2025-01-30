@@ -3,7 +3,7 @@
     <div
       class="flex justify-center items-center min-h-screen px-6 bg-gray-100 py-10"
     >
-      <div class="max-w-6xl flex flex-col md:flex-row items-center gap-8">
+      <div class="max-w-7xl flex flex-col md:flex-row items-center gap-8">
         <div class="flex-1 text-left">
           <h1 class="text-4xl font-bold text-[#245068] mb-4">
             We would love to bring your Solution to life!
@@ -47,7 +47,7 @@
       <!-- Values Section -->
     </div>
 
-    <div class="container mx-auto py-12 px-4">
+    <div class="max-w-7xl mx-auto py-12 px-4">
       <!-- Hero Section -->
       <div class="mb-16 text-center">
         <h1 class="text-4xl font-bold mb-2">

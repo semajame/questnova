@@ -1,6 +1,8 @@
 <template>
   <section class="max-w-7xl mx-auto px-4 pt-[10rem]">
-    <h1 class="text-4xl font-bold mb-6 text-[#337092]">Our Projects</h1>
+    <h1 class="text-4xl font-bold mb-6 text-black">
+      Our <span class="text-[#337092]">Projects</span>
+    </h1>
 
     <div class="grid md:grid-cols-2 gap-6 mt-10">
       <div

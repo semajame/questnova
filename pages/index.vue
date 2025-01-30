@@ -56,7 +56,7 @@
 
     <About id="about" />
 
-    <Solutions />
+    <Services />
 
     <!-- Services Section -->
     <div id="services" class="py-12 bg-gray-50">

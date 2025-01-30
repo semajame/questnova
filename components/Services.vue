@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto px-4 py-12">
+  <div class="max-w-7xl mx-auto px-4 py-12">
     <!-- Hero Section -->
     <div class="mb-16">
       <h1 class="text-4xl font-bold mb-2">
@@ -37,7 +37,7 @@
             </svg>
           </div>
           <div>
-            <h3 class="text-xl font-bold mb-2">Custom Software Development</h3>
+            <h2 class="text-xl font-bold mb-2">Custom Software Development</h2>
             <p class="text-gray-600">
               We tailor software solutions to your specific needs, applying
               standardized project management and quality assurance techniques
@@ -107,10 +107,10 @@
       <div class="relative">
         <div class="rounded-lg overflow-hidden shadow-xl">
           <NuxtImg
-            src="/img/hero-img.jpg"
+            src="/img/developers.jpg"
             alt="Software development team"
             densities="x1"
-            fromat="webp"
+            format="webp"
             class="w-full object-cover"
           />
 
@@ -130,12 +130,16 @@
     </div>
 
     <!-- Partnership Badges Section -->
-    <div class="mt-16 py-12 bg-gray-50 rounded-xl">
+    <div class="mt-16 py-12 rounded-xl relative px-7">
+      <div
+        class="absolute top-0 left-0 z-[-10] h-full w-full bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] rounded-xl"
+      ></div>
+
       <div class="text-center mb-8">
-        <h2 class="text-2xl font-bold mb-2">
+        <h2 class="text-2xl font-bold mb-2 text-white">
           Industry Recognition & Partnerships
         </h2>
-        <p class="text-gray-600">
+        <p class="text-gray-400">
           Ensuring world-class standards and quality in everything we deliver
         </p>
       </div>
@@ -143,19 +147,14 @@
       <div class="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto">
         <!-- IBM Business Partner Badge -->
         <div class="flex items-center p-6 bg-white rounded-lg shadow-md">
-          <div
-            class="w-16 h-16 flex items-center justify-center bg-blue-100 rounded-full mr-4"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-8 w-8 text-blue-600"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-            >
-              <path
-                d="M21 4H3a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1zm-1 14H4V6h16v12z"
-              />
-            </svg>
+          <div class="w-16 h-16 flex items-center justify-center mr-4">
+            <NuxtImg
+              src="/img/ibm-logo.webp"
+              class="w-full h-auto"
+              densities="x1"
+              alt="Ibm Logo"
+              format="webp"
+            />
           </div>
           <div>
             <h3 class="font-bold text-lg">IBM Business Partner</h3>
@@ -165,19 +164,14 @@
 
         <!-- Sun Developer Badge -->
         <div class="flex items-center p-6 bg-white rounded-lg shadow-md">
-          <div
-            class="w-16 h-16 flex items-center justify-center bg-orange-100 rounded-full mr-4"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-8 w-8 text-orange-600"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-            >
-              <path
-                d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
-              />
-            </svg>
+          <div class="w-16 h-16 flex items-center justify-center mr-4">
+            <NuxtImg
+              src="/img/sun.png"
+              class="w-full h-auto"
+              alt="Sun Logo"
+              densities="x1"
+              format="webp"
+            />
           </div>
           <div>
             <h3 class="font-bold text-lg">Sun Developer Partner</h3>
@@ -188,3 +182,7 @@
     </div>
   </div>
 </template>
+
+<script setup>
+// You can add any necessary composables or props here
+</script>
