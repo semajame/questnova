@@ -20,10 +20,10 @@
             <!-- Desktop Navigation -->
             <div class="hidden md:flex space-x-8">
               <NuxtLink
-                v-for="link in ['Services', 'Projects', 'Contact']"
+                v-for="link in ['About', 'Projects', 'Contact']"
                 :key="link"
-                :to="`/${link.toLowerCase()}`"
-                class="text-gray-600 hover:text-[#337092] relative group"
+                :to="`/#${link.toLowerCase()}`"
+                class="text-black hover:text-[#337092] relative group"
               >
                 {{ link }}
                 <span

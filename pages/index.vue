@@ -2,12 +2,9 @@
 <template>
   <div class="min-h-screen relative">
     <!-- Background Pattern -->
-
     <div
       class="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]"
     ></div>
-
-    <!-- Navigation -->
 
     <!-- Hero Section -->
     <div class="relative pt-[5.5rem] min-h-screen">
@@ -15,7 +12,7 @@
         <div class="pt-20 pb-16 text-center">
           <h1 class="tracking-tight font-extrabold">
             <span
-              class="block bg-gradient-to-t from-[#bfd9e8] to-[#337092] bg-clip-text md:text-6xl text-5xl text-transparent md:max-w-[800px] md:mx-auto"
+              class="block bg-gradient-to-t from-[#a0c5db] to-[#245068] bg-clip-text md:text-6xl text-5xl text-transparent md:max-w-[800px] md:mx-auto"
             >
               Premium Software Solutions For Your Business
             </span>
@@ -27,11 +24,13 @@
             applications. Specializing in customized solutions that drive your
             business forward.
           </p>
-          <div class="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
+          <div
+            class="mt-5 max-w-md mx-auto flex flex-col sm:flex sm:flex-row sm:justify-center md:mt-8 gap-2"
+          >
             <div class="rounded-lg shadow">
               <NuxtLink
-                to="/contact"
-                class="group w-full flex items-center justify-center px-8 py-3 border border-transparent text-sm font-medium rounded-md text-white bg-[#337092] hover:bg-[#245068] transition-all duration-[500ms] ease-in-out md:py-4 md:text-md md:px-6"
+                to="/#contact"
+                class="group w-full flex items-center justify-center px-8 py-3 border border-transparent text-md font-medium rounded-md text-white bg-[#337092] hover:bg-[#245068] transition-all duration-[500ms] ease-in-out md:py-4 md:px-6"
               >
                 Get Started
                 <Icon
@@ -42,92 +41,46 @@
                 />
               </NuxtLink>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Partners Section -->
-    <section class="partners-section py-12 bg-gray-100">
-      <div class="container mx-auto text-center">
-        <h2 class="text-3xl font-bold mb-6 text-[#337092]">Our Partners</h2>
-        <div
-          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6"
-        >
-          <div
-            v-for="(partner, index) in partners"
-            :key="index"
-            class="p-4 bg-white rounded-xl shadow"
-          >
-            <a
-              v-if="partner.link"
-              :href="partner.link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                :src="partner.logo"
-                :alt="partner.name"
-                class="w-full h-auto object-contain"
-              />
-            </a>
-            <img
-              v-else
-              :src="partner.logo"
-              :alt="partner.name"
-              class="w-full h-auto object-contain"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Values Section -->
-    <div id="values" class="py-12 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center">
-          <h2 class="text-4xl font-extrabold text-[#337092]">Our Values</h2>
-          <p class="mt-4 text-xl text-gray-600">
-            The principles that guide everything we do
-          </p>
-        </div>
-
-        <div class="mt-10">
-          <div
-            class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 md:grid-auto"
-          >
-            <div
-              v-for="(value, index) in corporateValues"
-              :key="index"
-              class="pt-6"
-            >
-              <div
-                class="flow-root bg-white/50 backdrop-blur-sm rounded-lg px-6 pb-8 hover:bg-white/80 transition-all duration-300 shadow-sm hover:shadow-md"
+            <div class="rounded-lg shadow">
+              <NuxtLink
+                to="/#about"
+                class="group w-full flex items-center justify-center px-8 py-3 border-2 border-[#245068] text-md font-medium rounded-md text-black bg-white hover:bg-[#245068] hover:text-white transition-all duration-[500ms] ease-in-out md:py-4 md:px-6"
               >
-                <div class="-mt-6">
-                  <div
-                    class="inline-flex items-center justify-center p-3 bg-purple-600/10 rounded-md"
-                  >
-                    <span class="text-2xl text-purple-600 font-bold">{{
-                      index + 1
-                    }}</span>
-                  </div>
-                  <p class="mt-5 text-base text-gray-600">
-                    {{ value }}
-                  </p>
-                </div>
-              </div>
+                What we are
+                <!-- <Icon
+                  name="iconamoon:arrow-right-2"
+                  width="28"
+                  height="28"
+                  class="ml-1 transform transition-transform duration-[500ms] ease-in-out group-hover:translate-x-1"
+                /> -->
+              </NuxtLink>
             </div>
           </div>
         </div>
       </div>
+      <!-- <div>
+        <div class="rounded-md">
+          <NuxtImg
+            src="/img/hero-img.jpg"
+            densities="x1"
+            format="webp"
+            class="rounded-md"
+          />
+        </div>
+      </div> -->
     </div>
+
+    <About id="about" />
+
+    <Solutions />
 
     <!-- Services Section -->
     <div id="services" class="py-12 bg-gray-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center">
-          <h2 class="text-4xl font-extrabold text-[#337092]">Our Services</h2>
+          <h2 class="text-4xl font-extrabold text-black">
+            More of our <span class="text-[#337092]">Services</span>
+          </h2>
           <p class="mt-4 text-xl text-gray-600">
             Comprehensive solutions for your business needs
           </p>
@@ -137,7 +90,7 @@
           <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <div v-for="(service, index) in services" :key="index" class="pt-6">
               <div
-                class="flow-root bg-white rounded-lg px-6 pb-8 pt-4 hover:bg-white/80 transition-all duration-300 shadow-sm hover:shadow-md"
+                class="flow-root bg-white rounded-lg px-6 pb-8 pt-4 hover:bg-white/80 transition-all duration-300 shadow-md hover:shadow-xl"
               >
                 <div>
                   <span v-html="service.icon"> </span>
@@ -157,62 +110,25 @@
       </div>
     </div>
 
-    <!-- Contact Section -->
-    <div id="contact" class="bg-purple-600/90 backdrop-blur-sm">
-      <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-        <div class="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
-          <div>
-            <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
-              Let's Build Your Solution
-            </h2>
-            <p class="mt-3 text-lg text-purple-100">
-              Room 302, Ellian Tower, Centro<br />
-              Mandaue City 6014, Cebu, Philippines<br />
-              Email: info@questnova.com
-            </p>
-          </div>
-          <div class="mt-8 lg:mt-0">
-            <div class="bg-white/80 backdrop-blur-sm rounded-lg shadow-md p-6">
-              <form class="space-y-4">
-                <div>
-                  <label class="block text-sm font-medium text-gray-700"
-                    >Name</label
-                  >
-                  <input
-                    type="text"
-                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm bg-white/80"
-                  />
-                </div>
-                <div>
-                  <label class="block text-sm font-medium text-gray-700"
-                    >Email</label
-                  >
-                  <input
-                    type="email"
-                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm bg-white/80"
-                  />
-                </div>
-                <div>
-                  <label class="block text-sm font-medium text-gray-700"
-                    >Message</label
-                  >
-                  <textarea
-                    rows="4"
-                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm bg-white/80"
-                  ></textarea>
-                </div>
-                <button
-                  type="submit"
-                  class="w-full bg-purple-600 text-white rounded-md py-2 px-4 hover:bg-purple-700 transition-colors duration-300"
-                >
-                  Send Message
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
+    <!-- Projects Section -->
+
+    <Projects id="projects" />
+
+    <!-- WHERE TO START -->
+    <section class="bg-gray-100 py-12 mt-12">
+      <div class="max-w-3xl mx-auto text-center px-4">
+        <h1 class="text-3xl font-semibold text-gray-800 mb-4">
+          Not sure where to start?
+        </h1>
+        <p class="text-lg text-gray-600">
+          We can schedule a
+          <span class="font-semibold text-indigo-600">free consultation</span>,
+          identify your requirements, and discuss on how we'll build your next
+          solution together.
+        </p>
       </div>
-    </div>
+    </section>
+    <Footer id="contact" />
   </div>
 </template>
 
@@ -222,12 +138,14 @@ const services = [
     title: 'Custom Software Development',
     description:
       'Tailored software solutions to meet your specific business needs, built with Java and modern technologies.',
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
-		<g fill="none" stroke="#f8cx42d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="#f8c42d">
+    icon: `	<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+		<g fill="none" stroke="#f8c42d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="#f8c42d">
 			<path d="M15.175 22v-1.009A1.007 1.007 0 0 1 16.18 20h.075c1.432-.012 2.662-1.006 2.954-2.388l.01-.052l.52-2.56l.94-.464c.505-.248.756-.373.81-.6c.055-.228-.114-.45-.451-.895l-1.908-2.508c-.19-.25-.285-.374-.335-.506s-.067-.32-.098-.693C18.353 5.227 14.865 2 10.612 2C6.132 2 2.5 5.582 2.5 10c0 2.75 1.407 5.175 3.55 6.615m0 0V22m0-5.385a8 8 0 0 0 2.027.987" />
 			<path d="m14 9l.92.793c.387.333.58.5.58.707s-.193.374-.58.707L14 12M7 9l-.92.793c-.387.333-.58.5-.58.707s.193.374.58.707L7 12m4.5-4l-2 5" />
 		</g>
-	</svg>`,
+	</svg>
+
+`,
   },
   {
     title: 'Web Development',
@@ -271,13 +189,5 @@ const services = [
 		<path fill="none" stroke="#2ee0c8" stroke-linecap="round" stroke-linejoin="round" d="M9 .5v6l3.59 4.57a1.5 1.5 0 0 1-1.18 2.43H2.59a1.5 1.5 0 0 1-1.18-2.43L5 6.5v-6M3.5.5h7" />
 	</svg>`,
   },
-]
-
-const corporateValues = [
-  'To provide premium quality software services for all clients',
-  'To achieve client delight through fitting, practical and useful solutions',
-  'To provide professional growth for its associates',
-  'To strenghten core software development foundation using open sourced tools',
-  'To practice continuous process improvement in all endeavors',
 ]
 </script>
