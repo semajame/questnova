@@ -7,7 +7,14 @@
     ></div>
 
     <!-- Hero Section -->
-    <div class="relative pt-[5.5rem] min-h-screen pb-[5rem]">
+    <div
+      class="relative pt-[5.5rem] min-h-screen pb-[5rem]"
+      v-motion-slide-bottom
+      :delay="200"
+      :duration="600"
+      :initial="{ opacity: 0, y: 100 }"
+      :visible="{ opacity: 1, y: 0 }"
+    >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="pt-20 pb-16 text-center">
           <h1 class="tracking-tight font-extrabold">
@@ -60,7 +67,14 @@
 
     <!-- Services Section -->
     <div id="services" class="py-12 bg-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+        v-motion-slide-bottom
+        :delay="200"
+        :duration="600"
+        :initial="{ opacity: 0, y: 100 }"
+        :visible="{ opacity: 1, y: 0 }"
+      >
         <div class="text-center">
           <h2 class="text-4xl font-extrabold text-black">
             More of our <span class="text-[#337092]">Services</span>
@@ -71,7 +85,14 @@
         </div>
 
         <div class="mt-10">
-          <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div
+            class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3"
+            v-motion-slide-bottom
+            :delay="200"
+            :duration="600"
+            :initial="{ opacity: 0, y: 100 }"
+            :visible="{ opacity: 1, y: 0 }"
+          >
             <div v-for="(service, index) in services" :key="index" class="pt-6">
               <div
                 class="flow-root bg-white rounded-lg px-6 pb-8 pt-4 hover:bg-white/80 transition-all duration-300 shadow-md hover:shadow-xl"
@@ -100,7 +121,14 @@
 
     <!-- WHERE TO START -->
     <section class="bg-gray-100 py-12 mt-12">
-      <div class="max-w-3xl mx-auto text-center px-4">
+      <div
+        class="max-w-3xl mx-auto text-center px-4"
+        v-motion-slide-bottom
+        :delay="200"
+        :duration="600"
+        :initial="{ opacity: 0, y: 100 }"
+        :visible="{ opacity: 1, y: 0 }"
+      >
         <h1 class="text-3xl font-semibold text-gray-800 mb-4">
           Not sure where to start?
         </h1>

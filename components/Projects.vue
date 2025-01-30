@@ -1,10 +1,24 @@
 <template>
   <section class="max-w-7xl mx-auto px-4 pt-[10rem]">
-    <h1 class="text-4xl font-bold mb-6 text-black">
+    <h1
+      class="text-4xl font-bold mb-6 text-black"
+      v-motion-slide-bottom
+      :delay="200"
+      :duration="600"
+      :initial="{ opacity: 0, y: 100 }"
+      :visible="{ opacity: 1, y: 0 }"
+    >
       Our <span class="text-[#337092]">Projects</span>
     </h1>
 
-    <div class="grid md:grid-cols-2 gap-6 mt-10">
+    <div
+      class="grid md:grid-cols-2 gap-6 mt-10"
+      v-motion-slide-bottom
+      :delay="200"
+      :duration="600"
+      :initial="{ opacity: 0, y: 100 }"
+      :visible="{ opacity: 1, y: 0 }"
+    >
       <div
         v-for="project in projects"
         :key="project.id"

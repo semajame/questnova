@@ -6,7 +6,14 @@
     ></div>
 
     <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-      <div class="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
+      <div
+        class="lg:grid lg:grid-cols-2 lg:gap-8 items-center"
+        v-motion-slide-bottom
+        :delay="200"
+        :duration="600"
+        :initial="{ opacity: 0, y: 100 }"
+        :visible="{ opacity: 1, y: 0 }"
+      >
         <div>
           <h2 class="text-3xl font-extrabold text-black sm:text-4xl">
             Let's Build Your Solution
@@ -17,7 +24,14 @@
             Email: ceo@questnova.com
           </p>
         </div>
-        <div class="mt-8 lg:mt-0">
+        <div
+          class="mt-8 lg:mt-0"
+          v-motion-slide-bottom
+          :delay="200"
+          :duration="600"
+          :initial="{ opacity: 0, y: 100 }"
+          :visible="{ opacity: 1, y: 0 }"
+        >
           <div class="bg-white/40 backdrop-blur-sm rounded-lg shadow-xl p-6">
             <form class="space-y-4">
               <div>

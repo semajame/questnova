@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
     '@nuxt/icon',
     '@nuxt/image',
+    '@vueuse/motion/nuxt',
   ],
 
   googleFonts: {
@@ -42,6 +43,27 @@ export default defineNuxtConfig({
 
       htmlAttrs: {
         lang: 'en',
+      },
+    },
+  },
+
+  runtimeConfig: {
+    public: {
+      motion: {
+        directives: {
+          'pop-bottom': {
+            initial: {
+              scale: 0,
+              opacity: 0,
+              y: 100,
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              y: 0,
+            },
+          },
+        },
       },
     },
   },

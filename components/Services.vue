@@ -1,7 +1,13 @@
 <template>
   <div class="max-w-7xl mx-auto px-4 py-12">
-    <!-- Hero Section -->
-    <div class="mb-16">
+    <div
+      class="mb-16"
+      v-motion-slide-bottom
+      :delay="200"
+      :duration="600"
+      :initial="{ opacity: 0, y: 100 }"
+      :visible="{ opacity: 1, y: 0 }"
+    >
       <h1 class="text-4xl font-bold mb-2">
         Your premium
         <span class="text-[#245068]">software solutions</span> partner.
@@ -15,7 +21,14 @@
     </div>
 
     <!-- Features and Image Grid -->
-    <div class="grid md:grid-cols-2 gap-12 items-center">
+    <div
+      class="grid md:grid-cols-2 gap-12 items-center"
+      v-motion-slide-bottom
+      :delay="200"
+      :duration="600"
+      :initial="{ opacity: 0, y: 100 }"
+      :visible="{ opacity: 1, y: 0 }"
+    >
       <!-- Features List -->
       <div class="space-y-12">
         <!-- Software Development Feature -->
@@ -130,7 +143,14 @@
     </div>
 
     <!-- Partnership Badges Section -->
-    <div class="mt-16 py-12 rounded-xl relative px-7">
+    <div
+      class="mt-16 py-12 rounded-xl relative px-7"
+      v-motion-slide-bottom
+      :delay="200"
+      :duration="600"
+      :initial="{ opacity: 0, y: 100 }"
+      :visible="{ opacity: 1, y: 0 }"
+    >
       <div
         class="absolute top-0 left-0 z-[-10] h-full w-full bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] rounded-xl"
       ></div>

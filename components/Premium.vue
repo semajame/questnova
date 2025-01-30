@@ -1,7 +1,14 @@
 <template>
   <div class="max-w-7xl mx-auto px-4 py-12">
     <!-- Hero Section -->
-    <div class="mb-16">
+    <div
+      class="mb-16"
+      v-motion-slide-bottom
+      :delay="200"
+      :duration="600"
+      :initial="{ opacity: 0, y: 100 }"
+      :visible="{ opacity: 1, y: 0 }"
+    >
       <h1 class="text-4xl font-bold mb-2">
         Your premium
         <span class="text-[#245068]">software solutions</span> partner.
@@ -15,7 +22,14 @@
     </div>
 
     <!-- Features and Image Grid -->
-    <div class="grid md:grid-cols-2 gap-12 items-center">
+    <div
+      class="grid md:grid-cols-2 gap-12 items-center"
+      v-motion-slide-bottom
+      :delay="200"
+      :duration="600"
+      :initial="{ opacity: 0, y: 100 }"
+      :visible="{ opacity: 1, y: 0 }"
+    >
       <!-- Features List -->
       <div class="space-y-12">
         <!-- Software Development Feature -->
@@ -104,7 +118,14 @@
       </div>
 
       <!-- Image and Stats -->
-      <div class="relative">
+      <div
+        class="relative"
+        v-motion-slide-bottom
+        :delay="200"
+        :duration="600"
+        :initial="{ opacity: 0, y: 100 }"
+        :visible="{ opacity: 1, y: 0 }"
+      >
         <div class="rounded-lg overflow-hidden shadow-xl">
           <NuxtImg
             src="/img/hero-img.jpg"
@@ -130,7 +151,14 @@
     </div>
 
     <!-- Partnership Badges Section -->
-    <div class="mt-16 py-12 bg-gray-50 rounded-xl">
+    <div
+      class="mt-16 py-12 bg-gray-50 rounded-xl"
+      v-motion-slide-bottom
+      :delay="200"
+      :duration="600"
+      :initial="{ opacity: 0, y: 100 }"
+      :visible="{ opacity: 1, y: 0 }"
+    >
       <div class="text-center mb-8">
         <h2 class="text-2xl font-bold mb-2">
           Industry Recognition & Partnerships
