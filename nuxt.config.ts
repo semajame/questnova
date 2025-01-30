@@ -32,6 +32,14 @@ export default defineNuxtConfig({
         },
       ],
 
+      link: [
+        {
+          rel: 'icon',
+          type: 'image/png',
+          href: '/img/image.png',
+        },
+      ],
+
       htmlAttrs: {
         lang: 'en',
       },
